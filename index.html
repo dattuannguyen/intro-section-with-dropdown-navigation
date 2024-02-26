@@ -17,12 +17,12 @@
 </head>
 <body>
 <main>
+
   <div class="nav">
-    <div class="left-nav">
-      <img src="images/logo.svg" alt="logo">
+    <img src="images/logo.svg" alt="logo">
+    <div class="left-nav hidden-from-mobile">
       <ul>
         <li>
-          <div class="check">
             <div class="nav-item">
               <p id="features" class="nav-items-click">Features</p>
               <img id="arrow-down-features" src="images/icon-arrow-down.svg">
@@ -44,7 +44,6 @@
                   Planning</li>
               </ul>
             </div>
-          </div>
         </li>
         <li>
           <div class="check">
@@ -70,16 +69,61 @@
         <li>About</li>
       </ul>
     </div>
-    <div class="right-nav">
+    <div class="right-nav hidden-from-mobile">
       <ul>
         <li>Login</li>
-        <li id="register">Register</li>
+        <li class="register">Register</li>
+      </ul>
+    </div>
+    <img src="images/icon-menu.svg" id="menu-icon">
+
+    <div class="sidebar">
+      <div class="close-item">
+        <img src="images/icon-close-menu.svg" alt="logo" id="close-icon">
+      </div>
+      <ul>
+        <li id="features-btn-mobile">Features
+          <img id="arrow-down-features-mobile" src="images/icon-arrow-down.svg">
+          <img id="arrow-up-features-mobile" src="images/icon-arrow-up.svg" class="hidden">
+          <ul id="list-items-features-mobile" class="hidden">
+            <li>
+              <img src="images/icon-todo.svg">
+              Todo List</li>
+            <li class="items">
+              <img src="images/icon-calendar.svg">
+              Calendar</li>
+            <li class="items">
+              <img src="images/icon-reminders.svg">
+              Reminder</li>
+            <li class="items">
+              <img src="images/icon-planning.svg">
+              Planning</li>
+          </ul>
+        </li>
+        <li id="company-btn-mobile" >Company
+          <img id="arrow-down-company-mobile" src="images/icon-arrow-down.svg">
+          <img id="arrow-up-company-mobile" src="images/icon-arrow-up.svg" class="hidden">
+          <ul id="list-items-company-mobile" class="hidden">
+            <li class="items">
+              History</li>
+            <li class="items">
+              Our Team</li>
+            <li class="items">
+              Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <ul class="mobile-login-register">
+        <li>Login</li>
+        <li class="register">Register</li>
       </ul>
     </div>
   </div>
   <div class="concept">
     <div class="left-side">
-      <h1>Make <br> remote work</h1>
+      <h1>Make remote work</h1>
       <p>  Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.</p>
       <button>Learn more</button>
@@ -91,20 +135,16 @@
       </div>
     </div>
     <div class="right-side">
-      <img src="images/image-hero-desktop.png" alt="hero-desktop">
+      <img src="images/image-hero-desktop.png" alt="hero-desktop" class="desktop-img">
+      <img src="images/image-hero-mobile.png" alt="hero-mobile" class="mobile-img">
     </div>
 
   </div>
 </main>
 
 
-
-
-
-
-<!--  -->
 <!--  <div class="attribution">-->
-<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
 <!--    Coded by <a href="#">Your Name Here</a>.-->
 <!--  </div>-->
 
